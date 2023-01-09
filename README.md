@@ -13,13 +13,13 @@
 
    Loge como usuário root, entre na pasta do script e dê prermissão de escrita para o arquivo `diopsi.sh` com o comando chmod +x diopsi.sh.     
 
-#####Sintaxe do comando
+##### Sintaxe do comando
 
 abstração | comando  | [flag] | arquivo   
 ------------- | -------------|------------- | -------------
  exemplo   |./diopsi.sh     | -a    | my_prograns.txt
 
-#####flags
+##### flags
 
 flag| função
 ------------- | -------------
