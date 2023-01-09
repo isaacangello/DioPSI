@@ -27,8 +27,8 @@ flag| função
  -a     |     Instala os programas utilizando metodo apt.
  -f     |     Instala os programas utilizando metodo flatpack.
  -s     |      Instala os programas utilizando metodo snap.
-    -h ou --help |     Exibe ajuda.              
-    -v ou --version |  exibe a versão do script.
+ -h ou --help |     Exibe ajuda.              
+ -v ou --version |  exibe a versão do script.
 
 ##### montando a lista de programas 
 
