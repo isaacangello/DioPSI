@@ -1,6 +1,6 @@
 #DioPSI
 ##### Introdução
-   Um dia rodando éla internet vi um post de um Vlog chamado DioLinux  de um estusiasta de Linux, tentando automatizar a instalação dos programas após , de forma simples e funcional mas muito redundante, do ponto de vista da programação é estremamente redundante o que ele estava fazendo, mas a ideia me parecia boa, por isso resolvi aproveitar e criar uma solução mais robusta, e batizer em homenagem a quem inspirou o script.
+   Um dia rodando pela internet vi um post de um Vlog chamado DioLinux  de um estusiasta de Linux, tentando automatizar a instalação dos programas após , de forma simples e funcional mas muito redundante, do ponto de vista da programação é estremamente redundante o que ele estava fazendo, mas a ideia me parecia boa, por isso resolvi aproveitar e criar uma solução mais robusta, e batizer em homenagem a quem inspirou o script.
 
 ##### o que é o DioPSI ?
    O DioPSI é um script escrito em shell script para acelerar a instalação de Programas após você ter recem instalado um sistema operacional Linux (Debian based).
@@ -13,20 +13,22 @@
 
    Loge como usuário root, entre na pasta do script e dê prermissão de escrita para o arquivo `diopsi.sh` com o comando chmod +x diopsi.sh.     
 
-#####Sintaxe do comando
+##### Sintaxe do comando
+
 abstração | comando  | [flag] | arquivo   
 ------------- | -------------|------------- | -------------
  exemplo   |./diopsi.sh     | -a    | my_prograns.txt
-#####flags
+
+##### flags
 
 flag| função
 ------------- | -------------
- --all    |   Instala utilizando todos os metodos disponíveis (apt,flatpack,snap)
-    -a     |     Instala os programas utilizando metodo apt.
-    -f     |     Instala os programas utilizando metodo flatpack.
-    -s    |      Instala os programas utilizando metodo snap.
-    -h ou --help |     Exibe ajuda.              
-    -v ou --version |  exibe a versão do script.
+ --all   |   Instala utilizando todos os metodos disponíveis (apt,flatpack,snap)
+ -a     |     Instala os programas utilizando metodo apt.
+ -f     |     Instala os programas utilizando metodo flatpack.
+ -s     |      Instala os programas utilizando metodo snap.
+ -h ou --help |     Exibe ajuda.              
+ -v ou --version |  exibe a versão do script.
 
 ##### montando a lista de programas 
 
@@ -61,8 +63,5 @@ Exemplo snap
     SNAP
         gimp   krita:i386
     PANS
-**Contents**
 
-[TOCM]
 
-[TOC]
