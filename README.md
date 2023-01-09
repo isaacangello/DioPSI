@@ -1,6 +1,6 @@
 #DioPSI
 ##### Introdução
-   Um dia rodando éla internet vi um post de um Vlog chamado DioLinux  de um estusiasta de Linux, tentando automatizar a instalação dos programas após , de forma simples e funcional mas muito redundante, do ponto de vista da programação é estremamente redundante o que ele estava fazendo, mas a ideia me parecia boa, por isso resolvi aproveitar e criar uma solução mais robusta, e batizer em homenagem a quem inspirou o script.
+   Um dia rodando pela internet vi um post de um Vlog chamado DioLinux  de um estusiasta de Linux, tentando automatizar a instalação dos programas após , de forma simples e funcional mas muito redundante, do ponto de vista da programação é estremamente redundante o que ele estava fazendo, mas a ideia me parecia boa, por isso resolvi aproveitar e criar uma solução mais robusta, e batizer em homenagem a quem inspirou o script.
 
 ##### o que é o DioPSI ?
    O DioPSI é um script escrito em shell script para acelerar a instalação de Programas após você ter recem instalado um sistema operacional Linux (Debian based).
@@ -23,10 +23,10 @@ abstração | comando  | [flag] | arquivo
 
 flag| função
 ------------- | -------------
- --all    |   Instala utilizando todos os metodos disponíveis (apt,flatpack,snap)
-    -a     |     Instala os programas utilizando metodo apt.
-    -f     |     Instala os programas utilizando metodo flatpack.
-    -s    |      Instala os programas utilizando metodo snap.
+ --all   |   Instala utilizando todos os metodos disponíveis (apt,flatpack,snap)
+ -a     |     Instala os programas utilizando metodo apt.
+ -f     |     Instala os programas utilizando metodo flatpack.
+ -s     |      Instala os programas utilizando metodo snap.
     -h ou --help |     Exibe ajuda.              
     -v ou --version |  exibe a versão do script.
 
