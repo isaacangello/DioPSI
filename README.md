@@ -61,8 +61,5 @@ Exemplo snap
     SNAP
         gimp   krita:i386
     PANS
-**Contents**
 
-[TOCM]
 
-[TOC]
