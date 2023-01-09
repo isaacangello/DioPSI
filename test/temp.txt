@@ -1,0 +1,9 @@
+APT
+mc kdenetwork kdenetwork-filesharing
+TPA
+FLAT
+fprograma1 fprog1 fprograma2 fprog2
+TALF
+SNAP
+mc sprograma1 sprog1 sprograma2 sprog2
+PANS

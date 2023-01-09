@@ -1,0 +1,19 @@
+APT
+
+mc kdenetwork kdenetwork-filesharing
+
+TPA
+
+FLAT
+
+fprograma1 fprog1 fprograma2 fprog2 fprograma3 fprog3 fprograma4 fprog4 fprograma5 fprog5 fprograma6 fprog6
+fprograma7 fprog7 fprograma8 fprog8 fprograma9 fprog9 fprograma10 fprog10 fprograma11 fprog11 fprograma12 fprog12
+fprograma13 fprog13 fprograma14 fprog14 fprograma15 fprog15 fprograma16 fprog16 fprograma17 fprog17 fprograma18 fprog18
+
+TALF
+
+SNAP
+
+sprograma1 sprog1 sprograma2 sprog2 sprograma3 sprog3 sprograma4 sprog4 sprograma5 sprog5 sprograma6 sprog6
+
+PANS
