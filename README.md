@@ -38,30 +38,30 @@ O script aceita somente arquivos do tipo ASCII text, não é preciso extensão. 
 
 Exemplo apt
 
-    APT  gimp   krita:i386  TPA
+    APT  gimp   krita:i386 mc kdenetwork kdenetwork-filesharing Notepadqq  TPA
     ou 
     APT
-        gimp   krita:i386
+        gimp   krita:i386 mc kdenetwork kdenetwork-filesharing Notepadqq
     TPA
 
 - Pacotes que vão utilizar metodo de instalação `Flatpack` devem ser escritos em lowercase e estar entre as palavras FLAT...TALF, divididas por espaço.
 
 Exemplo Flatpack
 
-    FLAT  gimp   krita:i386  TALF
+    FLAT  org.DolphinEmu.dolphin-emu com.google.Chrome  TALF
     ou 
     FLAT
-        gimp   krita:i386
+        org.DolphinEmu.dolphin-emu com.google.Chrome
     TALF
 
 - Pacotes que vão utilizar metodo de instalação `snap` devem ser escritos em lowercase e estar entre as palavras SNAP...PANS, divididas por espaço.
 
 Exemplo snap
 
-    SNAP  gimp   krita:i386  PANS
+    SNAP  kate supertuxkart sublime-text vlc  PANS
     ou 
     SNAP
-        gimp   krita:i386
+        kate supertuxkart sublime-text vlc
     PANS
 
 

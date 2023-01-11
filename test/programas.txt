@@ -1,6 +1,6 @@
 APT
 
-mc kdenetwork kdenetwork-filesharing
+mc kdenetwork kdenetwork-filesharing Notepadqq
 
 TPA
 
@@ -12,6 +12,6 @@ TALF
 
 SNAP
 
-kate supertuxkart sublime-text
+kate supertuxkart sublime-text vlc
 
 PANS
