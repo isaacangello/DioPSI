@@ -28,7 +28,7 @@ helpprint (){
 version="0.1.1"
     if [ $1 == "-h" ] || [ $1 == "--help" ] ;then helpprint ; fi
 
-    if [ $1 == "-v" ] || [ $1 == "--version" ] ;  then echo "versão $version" ; fi
+    if [ $1 == "-v" ] || [ $1 == "--version" ] ;  then echo "versão $version" ; exit fi
 
 ####################################################################################
 ############ aprte do script para tratamente de nomes de arquivos temorários
