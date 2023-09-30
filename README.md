@@ -17,16 +17,17 @@
 
 abstração | comando  | [flag] | arquivo   
 ------------- | -------------|------------- | -------------
- exemplo   |./diopsi.sh     | -a    | my_prograns.txt
+ exemplo   |./diopsi.sh     | -a    | my_packages.txt
 
 ##### flags
 
 flag| função
 ------------- | -------------
  --all   |   Instala utilizando todos os metodos disponíveis (apt,flatpack,snap)
- -a     |     Instala os programas utilizando metodo apt.
- -f     |     Instala os programas utilizando metodo flatpack.
- -s     |      Instala os programas utilizando metodo snap.
+ -a     |     Instala os programas utilizando gerenciador de pacotes apt.
+ -f     |     Instala os programas utilizando gerenciador de pacotes flatpack.
+ -s     |      Instala os programas utilizando gerenciador de pacotes snap.
+ -s     |      Instala os programas utilizando gerenciador de pacotes snap.
  -h ou --help |     Exibe ajuda.              
  -v ou --version |  exibe a versão do script.
 
@@ -34,7 +35,7 @@ flag| função
 
 O script aceita somente arquivos do tipo ASCII text, não é preciso extensão. esse arquivo deve ser organizado da seguinte forma:
 
-- Pacotes que vão utilizar metodo de instalação `apt` devem ser escritos em lowercase e estar entre as palavras APT...PTA, divididas por espaço.
+- Pacotes que vão utilizar gerenciador de pacotes `apt` devem ser escritos em lowercase e estar entre as palavras APT...PTA, divididas por espaço.
 
 Exemplo apt
 
@@ -44,7 +45,7 @@ Exemplo apt
         gimp   krita:i386 mc kdenetwork kdenetwork-filesharing Notepadqq
     TPA
 
-- Pacotes que vão utilizar metodo de instalação `Flatpack` devem ser escritos em lowercase e estar entre as palavras FLAT...TALF, divididas por espaço.
+- Pacotes que vão utilizar gerenciador de pacotes `Flatpack` devem ser escritos em lowercase e estar entre as palavras FLAT...TALF, divididas por espaço.
 
 Exemplo Flatpack
 
@@ -54,7 +55,7 @@ Exemplo Flatpack
         org.DolphinEmu.dolphin-emu com.google.Chrome
     TALF
 
-- Pacotes que vão utilizar metodo de instalação `snap` devem ser escritos em lowercase e estar entre as palavras SNAP...PANS, divididas por espaço.
+- Pacotes que vão utilizar gerenciador de pacotes `snap` devem ser escritos em lowercase e estar entre as palavras SNAP...PANS, divididas por espaço.
 
 Exemplo snap
 
@@ -64,4 +65,13 @@ Exemplo snap
         kate supertuxkart sublime-text vlc
     PANS
 
+- Pacotes que vão utilizar gerenciador de pacotes `Pacman` devem ser escritos em lowercase e estar entre as palavras SNAP...PANS, divididas por espaço.
+
+Exemplo Pacman
+
+    PACM  kate supertuxkart sublime-text vlc  MCAP
+    ou
+    PACM
+        kate supertuxkart sublime-text vlc
+    MCAP
 
