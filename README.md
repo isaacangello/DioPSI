@@ -23,7 +23,7 @@ flag| function
 ------------- | -------------
  --all   |   Install using all available methods (apt, flatpack, snap)
  -a     |    Install programs using the apt package manager.
- -f     |     Instala os programas utilizando gerenciador de pacotes flatpack.
+ -f     |     Install programs using the flatpack package manager.
  -s     |     Install programs using the flatpack package manager.
  -p     |     Install programs using the Pacman package manager.
  -h ou --help |     Display help
