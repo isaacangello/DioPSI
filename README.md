@@ -27,7 +27,7 @@ flag| função
  -a     |     Instala os programas utilizando gerenciador de pacotes apt.
  -f     |     Instala os programas utilizando gerenciador de pacotes flatpack.
  -s     |      Instala os programas utilizando gerenciador de pacotes snap.
- -s     |      Instala os programas utilizando gerenciador de pacotes snap.
+ -p     |      Instala os programas utilizando gerenciador de pacotes Pacman.
  -h ou --help |     Exibe ajuda.              
  -v ou --version |  exibe a versão do script.
 
