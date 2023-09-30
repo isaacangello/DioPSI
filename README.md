@@ -1,18 +1,15 @@
-->|English
----|------
-->|->
-#DioPSI
+
 ##### Introduction
-    One day while browsing the internet I saw a post from a Vlog called DioLinux by a Linux enthusiast, trying to automate the installation of applications and packages after , in a simple and functional way but very redundant, from a programming point of view it is extremely redundant what he I was doing it, but the idea seemed good to me, so I decided to take advantage and create a more robust solution, and name it in honor of whoever inspired the script.
+One day while browsing the internet I saw a post from a Vlog called DioLinux by a Linux enthusiast, trying to automate the installation of applications and packages after , in a simple and functional way but very redundant, from a programming point of view it is extremely redundant what he I was doing it, but the idea seemed good to me, so I decided to take advantage and create a more robust solution, and name it in honor of whoever inspired the script.
 
 ##### What is DioPSI?
-    DioPSI is a script written in shell script to speed up the installation of packages after you have recently installed a Linux operating system (Debian based), or ArchLinux (experimental) based system,
+DioPSI is a script written in shell script to speed up the installation of packages after you have recently installed a Linux operating system (Debian based), or ArchLinux (experimental) based system,
 
 ##### How it works?
-    This script parses a simple text file containing a list of programs organized based on the desired package manager, and installs the listed programs.
+This script parses a simple text file containing a list of programs organized based on the desired package manager, and installs the listed programs.
 
 ##### How to use?
-    Log in as the root user, enter the script folder and give write permission to the `diopsi.sh` file with the command chmod +x diopsi.sh.
+Log in as the root user, enter the script folder and give write permission to the `diopsi.sh` file with the command chmod +x diopsi.sh.
 
 ##### Command syntax
 
@@ -75,9 +72,8 @@ Example of Pacman package manager
     PACM
         kate supertuxkart sublime-text vlc
     MCAP
-->|Potuguese
----|------
-->|->
+
+
 
 #DioPSI
 ##### Introdução
