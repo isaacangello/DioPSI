@@ -1,0 +1,33 @@
+#!/bin/bash
+
+source ../bash_colors_lib.sh
+
+# red_bw
+# green_bw
+# yellow_bw
+# blue_bw
+# magenta_bw
+# ciano_bw
+# white_bw
+echo -e "
+    ${red_by}red 1$white_bd Fim
+    ${green_by}green 2$white_bd Fim
+    ${yellow_by}yellow 3$white_bd Fim
+    ${blue_by}blue 4$white_bd Fim
+    ${magenta_by} magenta 5$white_bd Fim
+    ${ciano_by}ciano 6$white_bd Fim
+    ${white_by}white 7$white_bd Fim
+    ${black_by}dark 8$white_bd Fim
+
+        "
+
+# echo -e "
+#     $ cor1
+#     cor 2
+#     cor 3
+#     cor 4
+#     cor 5
+#     cor 6
+#     cor 7
+#
+#         "
