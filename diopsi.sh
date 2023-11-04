@@ -27,17 +27,17 @@ helpprint (){
     ${b_blue_bw}Dio${b_black_bw}PSI${b_white_bd}   Sintaxe
     ${white_bd}comando  ${b_yellow_bd}[${green_bd}flag${b_yellow_bd}]  ${white_bd}arquivo
     ${b_blue_bw}Flags${blue_bd}--------------------------------------------------------------------------
-    $green_bd--all      $green_bd Instala utilizando todos os metodos disponíveis (apt,flatpack,snap)
-    $green_bd-a         $blue_bd Instala os programas utilizando gerenciador de pacptes apt.
-    $green_bd-f         $ciano_bd Instala os programas utilizando gerenciador de pacptes flatpack.
-    $green_bd-s         $red_bd Instala os programas utilizando gerenciador de pacptes snap.
-    $green_bd-p         $yellow_bd Instala os programas utilizando gerenciador de pacptes pacman.
+    ${green_bd}--all      ${green_bd} Instala utilizando todos os metodos disponíveis (apt,flatpack,snap)
+    ${green_bd}-a         ${blue_bd} Instala os programas utilizando gerenciador de pacotes apt.
+    ${green_bd}-f         ${ciano_bd} Instala os programas utilizando gerenciador de pacotes flatpack.
+    ${green_bd}-s         ${red_bd} Instala os programas utilizando gerenciador de pacotes snap.
+    ${green_bd}-p         ${yellow_bd} Instala os programas utilizando gerenciador de pacotes pacman.
     _______________________________________________________________________________
     ${white_bd}O script aceita somente arquivos do tipo ASCII text, não é preciso extensão
     "
     exit 0
 }
-version="0.1.15"
+version="0.2.01"
     if [[ "$1" = "-h"  ||  $1 = "--help" ]] ;then helpprint ; fi
 
     if [[ "$1" = "-v"  ||  $1 = "--version" ]] ; then
@@ -61,7 +61,7 @@ tmparqflat=flatprogs.txt
 tmparqsnap=snapprogs.txt
 tmparqpacm=pacmprogs.txt
 arquivo=$(echo "${arquivo##* }")
-testearq=$(file $arquivo)
+testearq=$(file $arquivo 2>/dev/null)
 #echo $testearq | cut -d':' -f2 | cut -d' ' -f2-3
 testearqresult=$(echo $testearq | cut -d":" -f2 | cut -d" " -f2-3)
 remoteflatpack=$( flatpak remotes | head -n 1 | cut -f1 )
@@ -71,7 +71,7 @@ remoteflatpack=$( flatpak remotes | head -n 1 | cut -f1 )
 ####################################################################################
 
 if [  "$testearqresult" != "ASCII text" ] ; then
-echo -e "\033[00;35;40mhouve algum \033[05;31;40merro\033[00;35;40m ou arquivo não existe."
+echo -e "${magenta_bd}houve algum ${f_red_bd}erro${magenta_bd} ou arquivo não existe."
 
 exit 1
 fi
@@ -117,18 +117,19 @@ function installpkgs(){
                 "Snap")
                     resuldinfo=$(snap info  $pkg | grep latest/stable: | grep  classic | wc -l)
                     if [ $resuldinfo  == 0 ] ; then
-                        echo "Instalando $pkg via $2 aguarde..."
+                        echo -e "${green_bd}Instalando ${b_white_bd}$pkg ${green_bd}via ${b_white_bd}$2${green_bd} aguarde..."
                         snap install $pkg
                     else
-                        echo "Instalando $pkg via $2 aguarde..."
+                        echo -e "${green_bd}Instalando ${b_white_bd}$pkg ${green_bd}via ${b_white_bd}$2${green_bd} aguarde..."
                         snap install --classic   $pkg
                     fi 
                 ;;
                 "Pacman")
+                echo -e "${green_bd}Instalando ${b_white_bd}$pkg ${green_bd}via ${b_white_bd}$2${green_bd} aguarde..."
                     pacman -Sy --noconfirm $pkg
                 ;;
                 *) 
-                    echo "\033[00;35;40mHouve algum erro estrambólico com o codigo de saída $?"
+                    echo -e "${red_bd}Houve algum erro estrambólico com o codigo de saída ${b_white_bd}$?"
                 ;;
             esac
             
@@ -154,7 +155,7 @@ while [ $# -gt 0 ]; do
             break
            ;;
         *)
-            echo -e "\033[00;33;40m$0:\033[00;37;40m Este parâmetro \033[00;32;40m'$1'\033[00;37;40m não foi reconhecido, saindo... proximo é \033[00;32;40m$2"
+            echo -e "${white_br}$0:${white_bd} Este parâmetro ${green_bd}'$1'${white_bd} não foi reconhecido, saindo... proximo é \033[00;32;40m$2"
             exit 1
             ;;
     esac
