@@ -1,11 +1,15 @@
 #!/bin/bash
-####################################################################################
+########################################################################
 # script DioPSI
 #Essa  é  uma   reconstrução   do  script  inicial  DioPSI.
 #Esse  script  tem  como   objetivo automatizar a reinstalação
 #de programas após a instalção do sistema operacional (linux).
 #Esse script foi inspirado no post do Dio Linux.
-####################################################################################
+########################################################################
+
+############ Para evitar alguns erros essa sessão contém informaçoes de ajuda
+############ e contém informações sobre a versão do script.
+
 
 ####################################################################################
 ############ importando Biblioteca de cores
@@ -13,25 +17,23 @@
 
 source ./bash_colors_lib.sh
 
-############ Para evitar alguns erros essa sessão contém informaçoes de ajuda
-############ e contém informações sobre a versão do script.
-
-
-
+####################################################################################
+############ Funçao de ajuda e versao do script
+####################################################################################
 
 helpprint (){
 
     echo -e "
-    \033[01;47;34mDio\033[01;30;47mPSI\033[00;47;40m   Sintaxe
-    \033[00;44;40mcomando  \033[00;33;40m[\033[00;32;40mflag\033[00;33;40m]  \033[00;44;40marquivo
-    \033[00;34;47mFlags\033[00;34;40m--------------------------------------------------------------------------
-    $green_bb--all      $green_bb Instala utilizando todos os metodos disponíveis (apt,flatpack,snap)
-    $green_bb-a         $blue_bb Instala os programas utilizando gerenciador de pacptes apt.
-    $green_bb-f         $ciano_bb Instala os programas utilizando gerenciador de pacptes flatpack.
-    $green_bb-s         $red_bb Instala os programas utilizando gerenciador de pacptes snap.
-    $green_bb-p         $yellow_bb Instala os programas utilizando gerenciador de pacptes pacman.
+    ${b_blue_bw}Dio${b_black_bw}PSI${b_white_bd}   Sintaxe
+    ${white_bd}comando  ${b_yellow_bd}[${green_bd}flag${b_yellow_bd}]  ${white_bd}arquivo
+    ${b_blue_bw}Flags${blue_bd}--------------------------------------------------------------------------
+    $green_bd--all      $green_bd Instala utilizando todos os metodos disponíveis (apt,flatpack,snap)
+    $green_bd-a         $blue_bd Instala os programas utilizando gerenciador de pacptes apt.
+    $green_bd-f         $ciano_bd Instala os programas utilizando gerenciador de pacptes flatpack.
+    $green_bd-s         $red_bd Instala os programas utilizando gerenciador de pacptes snap.
+    $green_bd-p         $yellow_bd Instala os programas utilizando gerenciador de pacptes pacman.
     _______________________________________________________________________________
-    \033[00;00;40mO script aceita somente arquivos do tipo ASCII text, não é preciso extensão
+    ${white_bd}O script aceita somente arquivos do tipo ASCII text, não é preciso extensão
     "
     exit 0
 }
@@ -39,13 +41,13 @@ version="0.1.15"
     if [[ "$1" = "-h"  ||  $1 = "--help" ]] ;then helpprint ; fi
 
     if [[ "$1" = "-v"  ||  $1 = "--version" ]] ; then
-        echo -e "\033[01;47;34mDio\033[01;30;47mPSI\033[00;47;40m\033[00;00;40m versão $version" ;exit 0 ;
+        echo -e "${b_blue_bw}Dio${b_black_bw}PSI${b_white_bd} versão $version" ;exit 0 ;
     fi
 ####################################################################################
 ############ checando usuario antes de tudo.
 ####################################################################################
 if [ $USER != 'root' ] ; then
-echo -e "\033[00;30;41merro:\033[00;31;40m o script nao pode ser executado, a não ser que seja o root. "
+echo -e "${f_black_br}error:${red_bd} o script nao pode ser executado, a não ser que seja o root. "
 exit 1
 fi
 

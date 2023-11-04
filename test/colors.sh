@@ -10,13 +10,20 @@ source ../bash_colors_lib.sh
 # ciano_bw
 # white_bw
 echo -e "
-    ${red_by}red 1$white_bd Fim
-    ${green_by}green 2$white_bd Fim
+    ${b_red_bd}red 1$white_bd Fim
+
+    ${red_bd}green 2$white_bd Fim
+
     ${yellow_by}yellow 3$white_bd Fim
+
     ${blue_by}blue 4$white_bd Fim
+
     ${magenta_by} magenta 5$white_bd Fim
+
     ${ciano_by}ciano 6$white_bd Fim
-    ${white_by}white 7$white_bd Fim
+
+    ${u_white_bd}tput smul white 7$white_bd Fim
+
     ${black_by}dark 8$white_bd Fim
 
         "
